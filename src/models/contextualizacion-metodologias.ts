@@ -56,12 +56,8 @@ class Coche extends Vehiculo {
 }
 
 const coche = new Coche(120);
-coche.acelerar(); // Imprime "Acelerando a 120 km/h"
-// coche.velocidad; // Error: propiedad 'velocidad' es protegida
+coche.acelerar(); 
 
-//---------------------------------------------------------------------------------------------------------------------------------------
-
-//Explica el concepto de herencia en POO. ¿Cómo se implementa en TypeScript?
 
 export class Persona2 {
     hablar(mensaje: string) {
@@ -76,12 +72,7 @@ class PersonaEducada extends Persona2 {
 }
 
 const persona1 = new PersonaEducada();
-persona1.saludar(); // Imprime "Buen día, señor"
-
-
-//---------------------------------------------------------------------------------------------------------------------------------------
-
-//¿Cómo se define una propiedad de solo lectura en una clase de TypeScript?
+persona1.saludar(); 
 
 export class Persona3 {
     readonly nombre: string;
@@ -92,12 +83,7 @@ export class Persona3 {
 }
 
 const persona = new Persona3("Juan");
-console.log(persona.nombre); // Imprime "Juan"
-// persona.nombre = "Pedro"; // Error: propiedad 'nombre' es de solo lectura
-
-//---------------------------------------------------------------------------------------------------------------------------------------
-
-//¿Qué es un método estático en TypeScript y cómo se usa?
+console.log(persona.nombre); 
 
 export class Calculadora {
     static suma(a: number, b: number): number {
@@ -106,11 +92,7 @@ export class Calculadora {
 }
 
 const resultado = Calculadora.suma(5, 3);
-console.log(resultado); // Imprime 8
-
-//---------------------------------------------------------------------------------------------------------------------------------------
-
-//¿Cómo se define un constructor con parámetros en TypeScript? Proporciona un ejemplo
+console.log(resultado); 
 
 export class Producto {
     nombre: string;
@@ -134,9 +116,6 @@ console.log(`Precio unitario: $${producto1.precio}`);
 console.log(`Cantidad: ${producto1.cantidad}`);
 console.log(`Total: $${producto1.calcularTotal()}`);
 
-//---------------------------------------------------------------------------------------------------------------------------------------
-
-//Explica el concepto de clases abstractas en TypeScript. ¿Cómo se define y utiliza una clase abstracta?
 
 export abstract class Figura {
     abstract calcularArea(): number;
@@ -158,9 +137,7 @@ export class Circulo extends Figura {
 const circulo = new Circulo(5);
 console.log("Área del círculo:", circulo.calcularArea());
 
-//---------------------------------------------------------------------------------------------------------------------------------------
 
-//¿Qué es el polimorfismo en POO y cómo se puede aplicar en TypeScript?
 
 export class Empleado {
     constructor(public nombre: string, public salario: number) {}
@@ -175,7 +152,7 @@ class Desarrollador extends Empleado {
         super(nombre, salario);
     }
 
-    // Funcionalidad específica para desarrolladores
+   
     escribirCodigo(): void {
         console.log(`${this.nombre} está escribiendo código.`);
     }
