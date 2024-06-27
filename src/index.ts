@@ -13,13 +13,13 @@ TypeScript.
     import { mostrarMenu } from "./models/libroStore";
     import { agregarNuevoLibro } from "./models/libroStore";
     
-    // Ejemplo de uso
+    
     const libro1 = new libros('123456', 'El Gran Gatsby', 'imagen1.jpg', 5000, 8000);
     
     let opcion : number;
     
         mostrarMenu();
-        opcion = 3; // Lee la opción desde la consola
+        opcion = 3; 
     
         switch (opcion) {
             case 1:

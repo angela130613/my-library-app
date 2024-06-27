@@ -1,6 +1,5 @@
 import { libros } from "./libros"
 
-// Función para mostrar el menú
 export function mostrarMenu() {
     console.log('--- Menú ---');
     console.log('1. Abastecer ejemplares');
