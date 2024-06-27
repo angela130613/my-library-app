@@ -39,9 +39,9 @@ vender(cantidad: number) {
     if (this.cantidadActual >= cantidad) {
         this.cantidadActual -= cantidad;
         this.transacciones.push(new Transaccion('venta', new Date(), cantidad));
-        return true; // Venta exitosa
+        return true; 
     } else {
-        return false; // No hay suficientes ejemplares para vender
+        return false; 
     }
 }   
     mostrarInformacion() {

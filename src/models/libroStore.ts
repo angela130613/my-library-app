@@ -14,8 +14,8 @@ export function agregarNuevoLibro() {
     const isbn = '987654'; 
     const titulo = 'Nuevo Libro'; 
     const imagen = 'imagen2.jpg'; 
-    const precioCompra = 6000; // Ingresa el precio de compra del nuevo libro
-    const precioVenta = 10000; // Ingresa el precio de venta del nuevo libro
+    const precioCompra = 6000;
+    const precioVenta = 10000; 
 
     const nuevoLibros = new libros(isbn, titulo, imagen, precioCompra, precioVenta);
     console.log(`Nuevo libro "${titulo}" agregado.`);
