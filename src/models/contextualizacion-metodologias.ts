@@ -11,11 +11,7 @@ export class Greeter {
 }
 
 const greeter = new Greeter("mundo");
-console.log(greeter.greet()); // Imprime "¡Hola, mundo!"
-
-//---------------------------------------------------------------------------------------------------------------------------------------
-
-//¿Qué son los modificadores de acceso (public, private, protected) y cómo se usan en TypeScript? Proporciona un ejemplo de cada uno.
+console.log(greeter.greet()); 
 
 
 //PUBLIC
