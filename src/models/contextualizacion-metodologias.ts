@@ -193,12 +193,8 @@ class Student implements Person {
         console.log(`Hola, soy ${this.name} y tengo ${this.age} años.`);
     }
 }
-const student1 = new Student("Juan", 20, "castaño", 185, 90);
-student1.greet(); // Salida: "Hola, soy Juan y tengo 20 años."
-
-//---------------------------------------------------------------------------------------------------------------------------------------
-
-//¿Puede una clase implementar múltiples interfaces en TypeScript? ¿Cómo?
+const student1 = new Student("Mateo", 25, "castaño oscuro", 185, 90);
+student1.greet(); 
 
 interface Name {
     name: string;
