@@ -221,6 +221,6 @@ class Animal implements Name, Weight, Height {
 }
 
 const animal = new Animal("Bruno", 5, 3);
-console.log(animal.name); // Salida: "Bruno"
-console.log(animal.weight); // Salida: 5
-console.log(animal.height); // Salida: 3
+console.log(animal.name); 
+console.log(animal.weight); 
+console.log(animal.height); 
