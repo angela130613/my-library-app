@@ -13,8 +13,6 @@ export class Greeter {
 const greeter = new Greeter("mundo");
 console.log(greeter.greet()); 
 
-
-//PUBLIC
 export class Persona {
     public nombre: string;
 
@@ -27,12 +25,6 @@ export class Persona {
     }
 }
 
-//const persona = new Persona("Juan");
-//persona.saludar(); // Imprime "¡Hola, Juan!"
-
-//---------------------------------------------------------------------------------------------------------------------------------------
-
-//PRIVATE
 
 export class CuentaBancaria {
     private saldo: number;
@@ -52,7 +44,7 @@ cuenta.consultarSaldo(); // Imprime "Saldo actual: $1000"
 
 //---------------------------------------------------------------------------------------------------------------------------------------
 
-// PROTECTED
+
 
 export class Vehiculo {
     protected velocidad: number;
