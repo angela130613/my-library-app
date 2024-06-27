@@ -163,26 +163,19 @@ class Gerente extends Empleado {
         super(nombre, salario);
     }
 
-    // Funcionalidad específica para gerentes
     aprobarVacaciones(): void {
         console.log(`${this.nombre} ha aprobado las vacaciones.`);
     }
 }
 
-// Crear instancias
+
 const desarrollador1 = new Desarrollador("Ana", 60000);
 const gerente1 = new Gerente("Carlos", 80000);
 
-// Usar métodos polimórficos
 console.log(`Salario mensual de ${desarrollador1.nombre}: $${desarrollador1.calcularSalarioMensual()}`);
 console.log(`Salario mensual de ${gerente1.nombre}: $${gerente1.calcularSalarioMensual()}`);
 
-desarrollador1.escribirCodigo(); // Imprime "Ana está escribiendo código."
-gerente1.aprobarVacaciones(); // Imprime "Carlos ha aprobado las vacaciones."
-
-//---------------------------------------------------------------------------------------------------------------------------------------
-
-//¿Cómo se implementa una interfaz en una clase en TypeScript? Proporciona un ejemplo.
+desarrollador1.escribirCodigo(); 
 
 interface Person {
     name: string;
@@ -193,7 +186,7 @@ interface Person {
 }
 class Student implements Person {
     constructor(public name: string, public age: number, public hairColor: string, public weight: number, public height: number) {
-        // Implementación de los métodos y propiedades
+    
     }
 
     greet(): void {
