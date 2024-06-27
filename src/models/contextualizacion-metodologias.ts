@@ -39,12 +39,7 @@ export class CuentaBancaria {
 }
 
 const cuenta = new CuentaBancaria(1000);
-cuenta.consultarSaldo(); // Imprime "Saldo actual: $1000"
-// cuenta.saldo; // Error: propiedad 'saldo' es privada
-
-//---------------------------------------------------------------------------------------------------------------------------------------
-
-
+cuenta.consultarSaldo(); 
 
 export class Vehiculo {
     protected velocidad: number;
